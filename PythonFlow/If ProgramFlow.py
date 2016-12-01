@@ -31,12 +31,18 @@ def bucle():
     numero= random.randint(1,10)
     if adivinar==numero:
         print('Has acertado el numero.')
+        return 1
     else:
         print('Vuelve a intentarlo')
-        bucle()
+        return -1
+        # bucle() 
+        # Si lo vuelve a llamar aquí el programa nunca acabará, lo suyo es hacer algo parecido a lo de abajo pero junto con esto.
 
 print('Vamos a jugar a adivinar un numero del 1 al 10')
-bucle()
+#bucle()
+puntuacion = 5
+while puntuacion>0:
+    puntuacion += bucle()
 
  # mismo programa a los dos anteriores pero sin funciones con bucle While
 # import random
