@@ -1,7 +1,9 @@
 print('Helloworld')
-print(5+6)
-print(6*8)
+print(5 + 6)
+print(6 * 8)
 print('Hola "Mundo"')
-Hola="Hello"
-Nombre="Luis"
-print(Hola + " " + Nombre)
+hola = "Hello"
+nombre = "Luis"
+print(hola + " " + nombre)
+
+print("ASDASDASD" + str(23))
