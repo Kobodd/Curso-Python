@@ -24,31 +24,31 @@
 #         bucle()
 
 
-# import random
-# def bucle():
-#
-#     adivinar = int(input('Introduce el numero a adivinar:'))
-#     numero= random.randint(1,10)
-#     if adivinar==numero:
-#         print('Has acertado el numero.')
-#     else:
-#         print('Vuelve a intentarlo')
-#         bucle()
-#
-# print('Vamos a jugar a adivinar un numero del 1 al 10')
-# bucle()
-
-# mismo programa a los dos anteriores pero sin funciones con bucle While
 import random
-print('Vamos a jugar a adivinar un numero del 1 al 10')
-
-numero=random.randint(1,10)
-adivinar = int(input('Introduce el numero a adivinar:'))
-
-print(numero)
-
-while numero!=adivinar:
-    print('vuelve a intentarlo')
+def bucle():
+    if adivinar > 10:
     adivinar = int(input('Introduce el numero a adivinar:'))
+    numero= random.randint(1,10)
+    if adivinar==numero:
+        print('Has acertado el numero.')
+    else:
+        print('Vuelve a intentarlo')
+        bucle()
 
-print('Muy bien has acertado')
+print('Vamos a jugar a adivinar un numero del 1 al 10')
+bucle()
+
+ # mismo programa a los dos anteriores pero sin funciones con bucle While
+# import random
+# print('Vamos a jugar a adivinar un numero del 1 al 10')
+#
+# numero=random.randint(1,10)
+# adivinar = int(input('Introduce el numero a adivinar:'))
+#
+# print(numero)
+#
+# while numero!=adivinar:
+#     print('vuelve a intentarlo')
+#     adivinar = int(input('Introduce el numero a adivinar:'))
+#
+# print('Muy bien has acertado')
