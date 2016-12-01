@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+#IDEA
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+
 # User-specific stuff:
 .idea/workspace.xml
 .idea/tasks.xml
