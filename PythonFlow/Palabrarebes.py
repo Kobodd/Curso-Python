@@ -1,5 +1,3 @@
-palabra= ["casa","oro", "Oso","eres","somo","somos","escalera","RoTor"]
-
 # for i in palabra:
 #     print("{}".format(i))
 
@@ -7,20 +5,24 @@ palabra= ["casa","oro", "Oso","eres","somo","somos","escalera","RoTor"]
 #     print(palabra[-i])
 
 
+palabra= ["casa","oro", "Oso","eres","somo","somos","escalera","RoTor"]
+
+palabramin = ''
+lista= []
+
 for i in palabra:
 
     palabragirada = ''
-    i = i.lower()
 
-    for char in i:
+    palabramin = i.lower()
 
-        palabragirada = char + palabragirada
+    for char in palabramin:
+        palabra = palabra[::-1]
+        # palabragirada = char + palabragirada
 
-    if palabragirada==i:
-        print(i)
-    else:
-        print('No es igual')
+    if palabragirada==palabramin:
+        lista.append(i)
 
-# palabra = palabra[::-1]
-#
-# print(palabra)
+print(lista)
+
+
